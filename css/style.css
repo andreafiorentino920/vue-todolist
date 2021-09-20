@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    align-items: center;
+}
+h1{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+}
+.bottone{
+    border: 1px solid black;
+    margin-left: 20px;
+}
+.cerca{
+    margin-top: 20px;
+}
+.logo, .cerca{
+    display: flex;
+    justify-content: center;
+}
+li{
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.lista{
+    background-color: #f5f7f7;
+    width: 70%;
+    margin: auto;
+}
