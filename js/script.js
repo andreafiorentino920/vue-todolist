@@ -22,6 +22,9 @@ var app = new Vue({
                 this.elementi.push(this.nuovoElemento);
                 this.nuovoElemento =""
             }
+        },
+        elimina: function(index){
+            this.elementi.splice(index,1);
         }
     }
 });
