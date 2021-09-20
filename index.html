@@ -19,14 +19,21 @@
                 <h1>boolean</h1>
             </div>
             <div class="cerca">
-                <input type="text" placeholder="Nuovo Todo" v-model="nuovoElemento">
+                <input type="text" placeholder="Nuovo Todo" v-model="nuovoElemento" class="barra">
                 <button class="bottone" @click="aggElemento()">Aggiungi</button>
             </div>
         </header>
         <main>
             <div class="container-lista">
                 <ul class="lista">
-                    <li v-for="(elemento, index) in elementi" :key="index">{{elemento}}<i class="fas fa-times" @click="elimina(index)"></i></li>
+                    <li v-for="(elemento, index) in elementi" :key="index" id="listato">
+                        {{elemento}}
+                        <div>
+                            Fatta <i class="far fa-check-square"></i>
+                            Non Fatta <i class="far fa-times-circle" ></i>
+                            Elimina <i class="fas fa-times" @click="elimina(index)"></i> 
+                        </div>
+                    </li>
                 </ul>
             </div>
         </main>

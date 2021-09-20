@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.container{
+    margin-top: 30px;
+}
+.container-lista{
+    margin: 80px;
+}
 .logo{
     width: 50%;
     height: 50%;
@@ -14,9 +19,13 @@ h1{
     display: inline-block;
     font-family: 'Lato', sans-serif;
 }
-.bottone{
+.bottone, .barra{
+    border-radius: 10px;
     border: 1px solid black;
     margin-left: 20px;
+}
+.barra{
+    font-size: 30px;
 }
 .cerca{
     margin-top: 20px;
